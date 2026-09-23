@@ -11,3 +11,8 @@ Böckeler ran an experiment of giving coding tasks to an agent with/without inst
 She furthermore split TDD into the goals of it and check which ones still work when agent run the process. Most of them didn't because when the same agent write, run and report a test, the step checking what went wrong is gone (e.g. one run even compute the "expected" values by calling the implementation itself...). Test first matters because it force a human to think through behavior before writing the code, and AI don't do that.
 
 For Böckeler thinking move into writing the spec, using mutation testing instead of trusting coverage, and freezing test scenarios she confirmed herself. The job is more "decide what correct mean, and build checks that don't grade their own homework." This have made me think maybe switching to the ideas of failing fast is better but ofc there are still constraints around this.
+
+## Comments
+
+### Jiaming
+This is a very insightful article because it creates an experiment that uses an agent itself as the evaluator, and the models are from the same company. The author argues that TDD is not as useful for GenAI as before, whilst I agree that the key is the model itself, and the harness is just an addition.
